@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+                <img src="logo.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <img src="menu.png" class="menu-icon" onclick="togglemenu()">
+        </header>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Become a <span>Web Designer</span></h2>
+                <h3>Start Designing With Us</h3>
+                <p>We will teach you to make a well-designed polished and responsive websites.</p>
+                <button type="button">Lets get Started<img src="arrow.png"></button>
+            </div>
+            <div class="col-2">
+                <img src="design.png" class="design">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        <footer>
+            <img src="fb.png">
+            <img src="tw.png">
+            <img src="ig.png">
+        </footer>
+    </div>
+    <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
